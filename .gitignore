@@ -1,0 +1,14 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Sub Project
+/*/target
+/*.iml
+*.jar
+
+### webpack
+node_modules
+/src/*/static/ui

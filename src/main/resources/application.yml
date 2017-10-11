@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  context-path: /springweb
+  use-forward-headers: true
+  tomcat:
+    port-header: X-Forwarded-Port
+    protocol-header: X-Forwarded-Proto
+    protocol-header-https-value: https
+    remote-ip-header: X-Forwarded-For
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: springweb
+  http:
+    multipart:
+        maxFileSize: 2MB
+        maxRequestSize: 10MB
+    encoding:
+      force: true
+      enabled: true
+      charset: UTF-8
+  mustache:
+    enabled: true
+    cache: false
